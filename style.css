@@ -1,0 +1,157 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background to keep things fresh */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #f04e45; /* Bright red header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h1 span {
+    color: #ffdd7e; /* A soft golden-yellow color */
+}
+
+/* Dropdown Section Styling */
+#selection-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+#selection-section label {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #f04e45; /* Matches the header */
+}
+
+#selection-section select {
+    padding: 12px 15px;
+    border: 2px solid #f04e45;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: white;
+    color: #333;
+}
+
+/* Pet Cards Section Styling */
+#pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1200px;
+}
+
+.card {
+    border: 2px solid #f04e45;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    width: 300px;
+    background-color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: #ff6f61; /* Warm coral shade */
+    font-size: 1.8em;
+    margin: 0 0 10px;
+}
+
+.card p {
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* View Details Button Styling */
+.viewDetailsBtn {
+    background-color: #ff6f61; /* Matches card heading */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.viewDetailsBtn:hover {
+    background-color: #ff9478; /* Slightly lighter coral shade */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f04e45; /* Bright red background for footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h2 {
+    font-size: 2em;
+    margin: 0 0 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Social Media Icon Styling */
+footer .social-media {
+    margin: 15px 0;
+}
+
+footer .social-icon {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .social-icon:hover {
+    color: #ffdd7e; /* Soft golden-yellow color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #pets {
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 375px) {
+    #selection-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

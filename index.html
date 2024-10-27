@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Adoption Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to <span>Adopt-a-Pet</span></h1>
+    </header>
+
+    <!-- Selection Section -->
+    <section id="selection-section">
+        <label for="animal-type">Select Animal:</label>
+        <select id="animal-type">
+            <option value="">Choose an animal</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="horse">Horse</option>
+            <option value="cow">Cow</option>
+            <!-- Add more animals as needed -->
+        </select>
+
+        <label for="breed-select">Select Breed:</label>
+        <select id="breed-select" disabled>
+            <option value="">Choose a breed</option>
+        </select>
+    </section>
+
+    <!-- Pet Cards Section (Remains unchanged) -->
+    <section id="pets">
+        <div class="card" onclick="redirectToPetPage('buddy.html')">
+            <img src="./images/dog.jpg" alt="Pet 1">
+            <h2>Buddy</h2>
+            <p class="breed">Golden Retriever</p>
+            <p>Buddy is a playful dog who loves outdoor activities and playing fetch. He is friendly with kids.</p>
+            <button class="viewDetailsBtn" onclick="event.stopPropagation(); redirectToPetPage('buddy.html')">View Details</button>
+        </div>
+        <div class="card" onclick="redirectToPetPage('luna.html')">
+            <img src="./images/cat.jpg" alt="Pet 2">
+            <h2>Luna</h2>
+            <p class="breed">Siamese Cat</p>
+            <p>Luna is a loving and gentle cat who enjoys napping in the sun. She is great with other cats.</p>
+            <button class="viewDetailsBtn" onclick="event.stopPropagation(); redirectToPetPage('luna.html')">View Details</button>
+        </div>
+        <!-- Add more cards as needed -->
+    </section>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Email: shelter@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+            <p>Follow us on social media for updates!</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
